@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    height: 80px;
+    max-width: 100%;
+    background-color: #092327;
+}
+
+.logo{
+    width: 150px;
+    height: 80px;
+}
+
+.logo img{
+    width: 150px;
+    height: 80px;
+    max-width: 150px;;
+    max-height: 80px;
+}
+            /*MENU*/
+.menu{
+    display: flex;
+    width: 75%;
+    height: 80px;
+    margin: 0 10px;
+}
+
+.menu ul{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu a:hover{
+    color: #f1b297;
+}
+
+            /*SUBMENU*/
+.menu_sub{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color:#20525a;
+    padding: 0 10px;
+}
+
+.menu_sub ul{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+.menu_sub li{
+    list-style: none;
+}
+            
+.menu_sub a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+    overflow: hidden; 
+}
+
+.contenedor ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+
+.contenedor li{
+    width: 100%;
+    list-style: none;
+}
+
+.contenedor  img{
+    width: 100%;
+    max-height: 380px;
+    animation: slider 15s infinite alternate; 
+}
+
+@keyframes slider {
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+}
+
+/*CATALOGO DE COMIDA*/
+.c-comidas{
+    margin: 0px 30px;
+    display: grid;
+    gap: 1em; /*espaciado entre cajas*/
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));    
+}
+
+.c-comidas__catComida{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.c-comidas__catComida input{
+    width: 60%;
+    background-color: #092327;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.c-comidas__catComida img{
+    width: auto;
+    height: 160px;
+}
